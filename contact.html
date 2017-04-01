@@ -2,37 +2,56 @@
 <html>
 <head>
 
-<link rel="stylesheet" href="assets/css/style.css"/>
+	<link rel="stylesheet" href="assets/css/style.css"/>
+
 
 	<title>Lauren's Basic Portfolio</title>
-
-	<div class="bar">
-	<ul>
-		<div class="logo">
-			<header>Lauren Granada</header>
-		</div>
-		<li><a href="index.html">About</a></li>
-		<li><a href="portfolio.html">Portfolio</a></li>
-		<li><a href="contact.html">Contact</a></li>
-	</ul>
-	</div>
-</head>
+</head>	
 
 <body>
+	<header class="bar">
+		<div class="container">
+			<a href="index.html" id="logo">Lauren Granada</a>
+			<nav>
+				<a href="index.html">About</a>
+				<a href="portfolio.html">Portfolio</a>
+				<a href="contact.html">Contact</a>
+			</nav>
+		</div>
+	</header>
 
-<h2>Contact</h2>
-<div class="mainbod">
-	<p> contact box</p>
+	<div id="mainbod" class="container">
+		<section id="main">
+			<h2>Contact Me</h2>
+			
+			<form id="formBox">
+				<ul>
+					<li>
+						<label for="name">Name</label>
+						<input type="text" name="name" placeholder="type here" required="required">
+					</li>
+					<li>
+						<label for="email">Email</label>
+						<input type="email" name="email" placeholder="Example@me.com" required="required">
+					</li>
+					<li>
+						<label for="text">Message</label>
+						<textarea name="name" placeholder="type here" required="required"></textarea>
+					</li>
+				</ul>
+				<input type="submit">
+			</form>
+		</section>
 
-</div>
-
-	<div class="connect">
-		<h3>Connect with Me</h3>
+		<section id="connect">
+			<h3>Connect with Me</h3>
 			<a href="https://www.facebook.com/lauren.granada.1"><img src="assets/images/facebook.png" width="100"></a>
 			<a href="https://twitter.com/laurengranada"><img src="assets/images/twitter.png" width="100"></a>
 			<a href="https://www.instagram.com/laurengranada/"><img src="assets/images/insta.png" width="100"></a>
+		</section>
 	</div>
 
-</body>
 <footer>Copyright 2016 Lauren Granada</footer>
+
+</body>
 </html>
